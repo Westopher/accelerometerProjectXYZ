@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var xLabel: UIStackView!
+    @IBOutlet weak var yLabel: UIStackView!
+    @IBOutlet weak var zLabel: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
