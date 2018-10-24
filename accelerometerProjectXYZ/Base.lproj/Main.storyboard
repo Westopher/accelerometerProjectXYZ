@@ -51,9 +51,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="xLabel" destination="6VR-To-RFU" id="4az-81-mKz"/>
-                        <outlet property="yLabel" destination="6VR-To-RFU" id="Jdg-RP-HLq"/>
-                        <outlet property="zLabel" destination="6VR-To-RFU" id="EpH-5N-diT"/>
+                        <outlet property="xLabel" destination="rYm-lv-WFu" id="SWJ-7a-o43"/>
+                        <outlet property="yLabel" destination="d3G-b4-Pis" id="toy-pD-3Y9"/>
+                        <outlet property="zLabel" destination="E1A-ul-Fif" id="I8O-DW-o6i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

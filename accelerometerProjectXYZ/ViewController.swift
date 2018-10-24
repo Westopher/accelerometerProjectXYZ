@@ -11,9 +11,9 @@ import CoreMotion
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var xLabel: UIStackView!
-    @IBOutlet weak var yLabel: UIStackView!
-    @IBOutlet weak var zLabel: UIStackView!
+    @IBOutlet weak var xLabel: UILabel!
+    @IBOutlet weak var yLabel: UILabel!
+    @IBOutlet weak var zLabel: UILabel!
     
     var motionManager: CMMotionManager!
     
@@ -26,7 +26,21 @@ class ViewController: UIViewController {
 
     func updateLabels(data: CMAccelerometerData?, error: Error?) {
         guard let accelerometerData = data else { return }
-        print(accelerometerData)
+        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 1
+        formatter.maximumFractionDigits = 1
+        
+        let x = formatter.string(for: accelerometerData.acceleration.x)!
+        let y = formatter.string(for: accelerometerData.acceleration.y)!
+        let z = formatter.string(for: accelerometerData.acceleration.z)!
+        
+        xLabel.text = "x: \(x)"
+        yLabel.text = "y: \(y)"
+        zLabel.text = "z: \(z)"
+        
     }
+    
+    
 }
 
